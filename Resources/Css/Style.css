@@ -215,6 +215,37 @@ header{
     padding:1rem 0;
     line-height: 145%;
 }
+.moreText{
+    display: none;
+}
+
+.read-more-btn{
+    display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: none;
+  background-color: #E8F6EF;
+
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.read-more-btn:link,
+.read-more-btn:visited{
+  border: 1px solid #E8F6EF;
+  color: #161E54;
+}
+.read-more-btn:hover,
+.read-more-btn:active,
+input[type=submit]:active{
+  background-color: #B8DFD8;
+}
+.text.show-more .moreText {
+    display: inline;
+  }
+  .text.show-more .dots {
+    display: none;
+  }
 /*--------------PLANS------------------*/
 
 .plan{
