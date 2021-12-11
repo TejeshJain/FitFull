@@ -94,3 +94,13 @@ readMoreBtn.addEventListener("click", (e) => {
     readMoreBtn.innerText = "Read More";
   }
 });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwxQcJqaoqPrmYPFCyJVjEx_pWJaEQJqC2Yn4E3NvFTjZ9TzTFCmNpOp9NwXyLDisJo/exec'
+const form = document.forms['google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thanks for giving us your review ....!!"))
+    .catch(error => console.error('Error!', error.message))
+})
