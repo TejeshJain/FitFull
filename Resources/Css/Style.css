@@ -326,6 +326,7 @@ select,textarea{
   border-radius: 3px;
   border: 1px solid #ccc;
 }
+
 *:focus {outline: none;}
 /* ----------------------------------------------- */
 /* FOOTER */
@@ -379,29 +380,6 @@ footer {
     font-size: 160%;
 }
 
-.ion-social-facebook,
-.ion-social-twitter,
-.ion-social-googleplus,
-.ion-social-instagram {
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.icon-social-facebook:hover {
-    color: #3b5998;
-}
-
-.icon-social-twitter:hover {
-    color: #00aced;
-}
-
-.icon-social-googleplus:hover {
-    color: #dd4b39;
-}
-
-.icon-social-instagram:hover {
-    color: #517fa4;
-}
 
 
 footer p {
